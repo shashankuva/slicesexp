@@ -1,7 +1,11 @@
 [core]
     remote = s3-data-storage
+    autostage = true
+    
 ['remote "s3-data-storage"']
-    url = s3://slicesexp/
-    endpointurl = https://10.2.213.43:9001
-    access_key_id = minioadmin
-    secret_access_key = miniopassword
+    url = s3://slices/
+    endpointurl = https://127.0.0.1:9001
+    access_key_id = admin
+    secret_access_key = password
+    version_aware = true
+    use_ssl = False
